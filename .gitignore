@@ -1,0 +1,7 @@
+/.kuiper/
+/.tools/
+/obj/
+/.depend*
+/*.smt2
+*.pyc
+__pycache__/
