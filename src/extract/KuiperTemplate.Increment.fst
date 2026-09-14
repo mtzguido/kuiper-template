@@ -13,7 +13,7 @@ fn increment_kernel (output : gpu_ref u64) (#initial : erased u64)
   requires output |-> initial
   ensures output |-> U64.add_mod initial 1uL
 {
-  output := U64.add_mod !output value 1uL;
+  output := U64.add_mod !output 1uL;
 }
 
 fn run (_ : unit)
