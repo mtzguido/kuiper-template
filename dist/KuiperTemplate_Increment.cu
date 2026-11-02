@@ -1,12 +1,11 @@
 
 #include "KuiperTemplate_Increment.h"
 
-__global__
-/**
-  hoisted when extracting run
-*/
-static void
-__hoisted_run_0(uint64_t *device_value)
+__global__ __launch_bounds__(1)
+    /**
+      hoisted when extracting run
+    */
+    static void __hoisted_run_0(uint64_t *device_value)
 {
     (*device_value)++;
 }
